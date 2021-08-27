@@ -29,6 +29,7 @@
 <style lang="scss">
   .container {
     display: flex;
+    background-color: $color-theme-2;
     background-position: center center;
     background-size: cover;
     width: 100%;
