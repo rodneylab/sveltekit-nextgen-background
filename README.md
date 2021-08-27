@@ -9,7 +9,7 @@
   SvelteKit NextGen Background Image
 </h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fcc135a7-58dc-4945-a69c-236f7f6a4e07/deploy-status)](https://app.netlify.com/sites/inspiring-heyrovsky-49f468/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0dd75d1-108f-4852-9bef-3456b5476243/deploy-status)](https://app.netlify.com/sites/eloquent-beaver-f13d7d/deploys)
 
 # sveltekit-nextgen-background
 
@@ -23,7 +23,7 @@ If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
 git clone https://github.com/rodneylab/sveltekit-nextgen-background.git my-new-mdsvex-blog
-cd my-new-mdsvex-blog
+cd sveltekit-nextgen-background
 pnpm install # or npm install
 pnpm run dev
 ```
