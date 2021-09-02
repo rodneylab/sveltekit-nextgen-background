@@ -1,5 +1,13 @@
 <script>
+  import { browser } from '$app/env';
   import backgroundImage from '$lib/assets/sunflower.jpg';
+  import backgroundImageWebp from '$lib/assets/sunflower.jpg?format=webp';
+
+  function serveWebp() {
+    return browser && document.documentElement.classList.contains('webp');
+  }
+
+  const backgroundImageUsed = serveWebp() ? backgroundImageWebp : backgroundImage;
 </script>
 
 <svelte:head>
@@ -7,9 +15,14 @@
   <meta name="description" content="A poem about sunflowers" />
   <meta name="theme-color" content="#ffdf00" />
   <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+  <script
+    async
+    integrity="sha384-xms8Nhw0czGEIWf0BZpCsaCY9PPeFf6bJ6cG0CNYoVvDK3M0146DNIywperKRSNI"
+    src="/modernizr-webp.js"
+    type="text/javascript"></script>
 </svelte:head>
 
-<div class="container" style={`background-image: url(${backgroundImage})`}>
+<div class="container" style={`background-image: url(${backgroundImageUsed})`}>
   <div class="panel">
     <div class="content">
       <h1>The Soul of the Sunflower</h1>
