@@ -17,6 +17,8 @@
 
 SvelteKit demo code for adding a NextGen background image to a site page with a JPEG or PNG fallback for older browsers.
 
+See <a href="https://rodneylab.com/sveltekit-next-gen-background-image/">video explaining how add a WebP background image in SvelteKit</a>. Drop any questions you have into a comment on that page.
+
 ## Building and previewing the site
 
 If you're seeing this, you've probably already done this step. Congrats!
