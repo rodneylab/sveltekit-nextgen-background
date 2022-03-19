@@ -22,7 +22,7 @@
     type="text/javascript"></script>
 </svelte:head>
 
-<div class="container" style={`background-image: url(${backgroundImageUsed})`}>
+<div class="container" style:background-image={`url(${backgroundImageUsed})`}>
   <div class="panel">
     <div class="content">
       <h1>The Soul of the Sunflower</h1>
