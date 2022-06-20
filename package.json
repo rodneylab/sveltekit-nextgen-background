@@ -1,6 +1,8 @@
 {
   "name": "sveltekit-nextgen-background",
   "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "description": "SveleKit Next-Gen Background Image: see how you can automatically generate a Next-Gen background image with a safe fallback in SvelteKit.",
   "scripts": {
     "dev": "svelte-kit dev -p 3000",
     "build": "svelte-kit build",
@@ -30,6 +32,13 @@
     "svelte-preprocess": "^4.10.7",
     "svelte-preprocess-import-assets": "^0.1.6",
     "vite-imagetools": "^4.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/sveltekit-nextgen-background"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/sveltekit-nextgen-background/issues"
   },
   "type": "module"
 }
