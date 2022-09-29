@@ -1,5 +1,5 @@
 <script>
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 	import backgroundImage from '$lib/assets/sunflower.jpg';
 	import backgroundImageWebp from '$lib/assets/sunflower.jpg?format=webp';
 
@@ -18,8 +18,7 @@
 	<script
 		async
 		integrity="sha384-xms8Nhw0czGEIWf0BZpCsaCY9PPeFf6bJ6cG0CNYoVvDK3M0146DNIywperKRSNI"
-		src="/modernizr-webp.js"
-		type="text/javascript"></script>
+		src="/modernizr-webp.js"></script>
 </svelte:head>
 
 <div class="container" style:background-image={`url(${backgroundImageUsed})`}>
