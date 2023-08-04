@@ -5,7 +5,7 @@
 	"description": "SveleKit Next-Gen Background Image: see how you can automatically generate a Next-Gen background image with a safe fallback in SvelteKit.",
 	"scripts": {
 		"dev": "vite dev",
-		"run": "vite dev",
+		"start": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --ignore-path .gitignore  --check --plugin=prettier-plugin-svelte . && eslint --ignore-path .gitignore .",
