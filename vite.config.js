@@ -1,8 +1,17 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { imagetools } from 'vite-imagetools';
+import { defineConfig } from 'vite';
 
 /** @type {import('vite').UserConfig} */
-const config = {
+export default defineConfig({
+	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: "@use 'variables.scss';",
+				loadPaths: ['src/lib/styles'],
+			},
+		},
+	},
 	plugins: [sveltekit(), imagetools()],
 	server: {
 		port: 5173,
@@ -12,6 +21,4 @@ const config = {
 		port: 4173,
 		strictPort: false,
 	},
-};
-
-export default config;
+});

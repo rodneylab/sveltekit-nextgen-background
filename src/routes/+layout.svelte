@@ -3,6 +3,8 @@
 	import '@fontsource/playfair-display/700.css';
 	import '@fontsource/lato/700.css';
 	import '$lib/styles/styles.scss';
+
+	let { children } = $props();
 </script>
 
-<slot />
+{@render children?.()}
