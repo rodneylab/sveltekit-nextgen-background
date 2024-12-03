@@ -7,7 +7,7 @@
 		return browser && document.documentElement.classList.contains('webp');
 	}
 
-	const backgroundImageUsed = serveWebp() ? backgroundImageWebp : backgroundImage;
+	let backgroundImageUsed = $derived(serveWebp() ? backgroundImageWebp : backgroundImage);
 </script>
 
 <svelte:head>
@@ -18,7 +18,8 @@
 	<script
 		async
 		integrity="sha384-xms8Nhw0czGEIWf0BZpCsaCY9PPeFf6bJ6cG0CNYoVvDK3M0146DNIywperKRSNI"
-		src="/modernizr-webp.js"></script>
+		src="/modernizr-webp.js"
+	></script>
 </svelte:head>
 
 <div class="container" style:background-image={`url(${backgroundImageUsed})`}>
@@ -41,36 +42,46 @@
 <style lang="scss">
 	.container {
 		display: flex;
-		background-color: $color-theme-2;
+		background-color: variables.$color-theme-2;
 		background-position: center center;
 		background-size: cover;
 		width: 100%;
 		min-height: 100vh;
-		padding: $spacing-12;
+		padding: variables.$spacing-12;
 	}
 
 	.panel {
-		background: rgba($color-theme-3, $alpha: 0.81);
-		box-shadow: $spacing-0 $spacing-0 $spacing-1 $spacing-0 $color-theme-4;
-		border-radius: $spacing-4;
+		background: rgba(variables.$color-theme-3, variables.$alpha: 0.81);
+		box-shadow: variables.$spacing-0 variables.$spacing-0 variables.$spacing-1 variables.$spacing-0
+			variables.$color-theme-4;
+		border-radius: variables.$spacing-4;
 		color: #502419;
 		margin: auto;
-		padding: $spacing-6 $spacing-24;
+		padding: variables.$spacing-6 variables.$spacing-24;
 		height: 100%;
 	}
 
 	.content {
-		padding: $spacing-4;
+		padding: variables.$spacing-4;
 	}
 
 	h1,
 	h2,
 	p {
-		font-family: Playfair Display, Times New Roman, Times, serif;
+		font-family:
+			Playfair Display,
+			Times New Roman,
+			Times,
+			serif;
 	}
 	p {
-		font-weight: $font-weight-bold;
-		font-family: Lato, Playfair Display, Times New Roman, Times, serif;
-		font-size: $font-size-2;
+		font-weight: variables.$font-weight-bold;
+		font-family:
+			Lato,
+			Playfair Display,
+			Times New Roman,
+			Times,
+			serif;
+		font-size: variables.$font-size-2;
 	}
 </style>
